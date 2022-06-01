@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "8b9eaa5b-0853-4653-aaf1-374669a70ba2",
+		"name": "cloud-cdnd-c2-final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/filteredimage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGxvQGdtYWlsLmNvbSIsInBhc3N3b3JkX2hhc2giOiIkMmIkMTAkM0Iza3NMOWJxTXlTbUNwS084LzJET2ZyL1RrU0REaFJNU28vRnowa1pQZ1hQOERWQ0Z0M1ciLCJjcmVhdGVkQXQiOiIyMDIyLTA1LTMwVDA2OjQ4OjAxLjE4MFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTA1LTMwVDA2OjQ4OjAxLjE4MVoiLCJpYXQiOjE2NTM4OTQ1NjJ9.ytU9nO6DkSI0D3DsiBSgAA7HuESSWEihWL37rSWXmTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/filteredimage?image_url=https://image.shutterstock.com/image-photo/british-shorthair-kitten-silver-color-260nw-1510641710.jpg",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://image.shutterstock.com/image-photo/british-shorthair-kitten-silver-color-260nw-1510641710.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "localhost:8082"
+		}
+	]
+}
